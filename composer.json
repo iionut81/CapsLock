@@ -1,0 +1,20 @@
+{
+  "name": "iionut81/media-buyers-api-tests",
+  "description": "API test suite for the Media Buyers resource — PHP + Codeception",
+  "type": "project",
+  "require-dev": {
+    "codeception/codeception": "^5.0",
+    "codeception/module-rest": "^3.0",
+    "codeception/module-phpbrowser": "^3.0",
+    "codeception/module-asserts": "^3.0",
+    "justinrainbow/json-schema": "^5.2"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}

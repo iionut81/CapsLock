@@ -1,0 +1,11 @@
+actor: ApiTester
+modules:
+  enabled:
+    - REST:
+        url: '%BASE_URL%/api'
+        depends: PhpBrowser
+        part: Json
+    - PhpBrowser:
+        url: '%BASE_URL%'
+    - Asserts
+    - \Tests\_support\Helper\SchemaValidator
